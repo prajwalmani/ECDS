@@ -106,7 +106,7 @@ public class rm extends JFrame {
 		chckbxShowPassword.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				 if ( chckbxShowPassword.isSelected()) {
-				      passwordField.setEchoChar((char)0); //password = JPasswordField
+				      passwordField.setEchoChar((char)0); 
 				   } else {
 				      passwordField.setEchoChar('*');
 				   }
