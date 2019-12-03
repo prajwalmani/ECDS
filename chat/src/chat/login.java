@@ -223,7 +223,6 @@ public class login extends JFrame {
 					Connection conn =(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/chat","root","");
 					PreparedStatement pstmt = conn.prepareStatement(sql);
 					pstmt.setString(1,  txtEnterUserid.getText());
-					System.setOut(null);
 					pstmt.setString(2, new String(passwordField.getPassword()));
 					ResultSet rs = pstmt.executeQuery();
 					

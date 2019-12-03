@@ -118,7 +118,6 @@ textArea.setEditable(false);
 					pstmt.setString(3, textField.getText());
 					DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 					Date date = new Date();
-//					System.out.println(dateFormat.format(date));
 					pstmt.setDate(4,new java.sql.Date(date.getTime()));
 					pstmt.executeUpdate();
 
@@ -158,75 +157,6 @@ textArea.setEditable(false);
 		contentPane.add(btnNewButton);
 		
 		JButton button_1 = new JButton("Deadlines");
-//		button_1.addMouseListener(new MouseAdapter() {
-//
-//			@Override
-//			public void mouseClicked(MouseEvent e) {
-//				String sql3="SELECT pid FROM msg where msg.Empid=?";
-//				try
-//				{Class.forName("com.mysql.jdbc.Driver");
-//				Connection conn =(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/chat","root","");
-//				PreparedStatement pstmt = conn.prepareStatement(sql3);
-//				pstmt.setInt(1, eid);
-//				ResultSet rs = pstmt.executeQuery();
-//         
-//                DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-//				Date date = new Date();
-//				Date d1=new Date();
-//				Date d2=new Date();
-//				Date d3=new Date();
-//				Date d4=new Date();
-//
-//
-//				 d1=dateFormat.parse("2020-11-24");
-//			d2=dateFormat.parse("2020-11-11");
-//		 d3=dateFormat.parse("2020-02-23");
-//			d4=dateFormat.parse("2020-02-13");
-//
-//				java.sql.Date d=new java.sql.Date(date.getTime());
-//                if(                rs.getInt(1)==1 && d.compareTo(d1)==0) {
-//                	JOptionPane.showMessageDialog(null, "Deadline is today!",
-//    						"Alert", JOptionPane.ERROR_MESSAGE);
-//                }
-//                else {
-//                	JOptionPane.showMessageDialog(null, "No deadlines!",
-//    						"Notification", JOptionPane.INFORMATION_MESSAGE);
-//                }
-//                
-//                if( rs.getInt(1)==2&& d.compareTo(d2)==0) {
-//                	JOptionPane.showMessageDialog(null, "Deadline is today!",
-//    						"Alert", JOptionPane.ERROR_MESSAGE);
-//                }
-//                else {
-//                	JOptionPane.showMessageDialog(null, "No deadlines!",
-//    						"Notification", JOptionPane.INFORMATION_MESSAGE);
-//                }
-//                
-//                if( rs.getInt(1)==3 && d.compareTo(d3)==0) {
-//                	JOptionPane.showMessageDialog(null, "Deadline is today!",
-//    						"Alert", JOptionPane.ERROR_MESSAGE);
-//                }
-//                else {
-//                	JOptionPane.showMessageDialog(null, "No deadlines!",
-//    						"Notification", JOptionPane.INFORMATION_MESSAGE);
-//                }
-//					
-//                if( rs.getInt(1)==4 && d.compareTo(d4)==0) {
-//                	JOptionPane.showMessageDialog(null, "Deadline is today!",
-//    						"Alert", JOptionPane.ERROR_MESSAGE);
-//                }
-//                else {
-//                	JOptionPane.showMessageDialog(null, "No deadlines!",
-//    						"Notification", JOptionPane.INFORMATION_MESSAGE);
-//                }
-//					
-//				}catch(Exception e1)
-//				{
-//					e1.printStackTrace();
-//				}
-//			}
-//			
-//		});
 		button_1.setFont(new Font("Bell MT", Font.BOLD, 18));
 		button_1.setBounds(601, 298, 125, 38);
 		contentPane.add(button_1);

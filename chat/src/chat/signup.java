@@ -210,7 +210,7 @@ public class signup extends JFrame {
 		});
 		txtRenterPassword.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String rpass=	txtRenterPassword.getText();			System.out.println(rpass);
+				String rpass=	txtRenterPassword.getText();			;
 
 			}
 		});
@@ -269,7 +269,6 @@ public class signup extends JFrame {
 					pstmt.setString(6, txtEnterPassword.getText());
 					DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 					Date date = new Date();
-					System.out.println(dateFormat.format(date));
 					pstmt.setDate(7,new java.sql.Date(date.getTime()));
 					pstmt.executeUpdate();
 					msg c=new msg( Integer.parseInt(txtEmpid.getText()));
@@ -324,7 +323,7 @@ public class signup extends JFrame {
 		txtEmailId.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			String email=txtEmailId.getText();
-			System.out.println(email);}
+		}
 		});
 		txtEmailId.setText("Email iD");
 		txtEmailId.setOpaque(false);
